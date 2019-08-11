@@ -1,0 +1,31 @@
+{
+  "name": "thanos-gauntlet",
+  "version": "1.0.0",
+  "description": "The Infinity Gauntlet for Thanos snap.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itibbers/thanos-gauntlet.git"
+  },
+  "keywords": [
+    "thanos",
+    "the-infinity-gauntlet",
+    "Google",
+    "Easter-Egg"
+  ],
+  "author": "iTibbers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/itibbers/thanos-gauntlet/issues"
+  },
+  "homepage": "https://github.com/itibbers/thanos-gauntlet#readme",
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.3"
+  }
+}
