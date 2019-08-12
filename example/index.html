@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Thanos-Snap</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .thanos-snap {
+      width: 80px;
+      height: 80px;
+      background: url(https://www.google.com/logos/fnbx/thanos/thanos_snap.png);
+      cursor: pointer;
+    }
+
+    .thanos-time {
+      width: 80px;
+      height: 80px;
+      background: url(https://www.google.com/logos/fnbx/thanos/thanos_time.png);
+      cursor: pointer;
+    }
+
+    .thanos-animation {
+      animation: snap 1.2s steps(48) 0s 1;
+    }
+
+    @keyframes snap {
+      to {
+        background-position: -4800% 0;
+      }
+    }
+
+    .wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-cointent: center;
+      align-items: center;
+    }
+
+    .info {
+      box-sizing: border-box;
+      margin: 10px;
+      border: 5px dashed #FF6666;
+      text-align: center;
+      width: 300px;
+      height: 100px;
+    }
+
+    .info-hide-short {
+      animation: hide .5s ease-in-out 1 both;
+    }
+
+    @keyframes hide {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="info-wrap" id="info-wrap">
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+    <div class="info">
+      <h3>Thanos</h3>
+      <p>点击图片查看动画效果</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="item">
+      <div class="thanos-snap" id="thanos-snap"></div>
+      <p>响指</p>
+    </div>
+    <div class="item">
+      <div class="thanos-time" id="thanos-time"></div>
+      <p>恢复</p>
+    </div>
+    <div class="item">
+      <button id="btn">snap</button>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
