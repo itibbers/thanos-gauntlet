@@ -1,6 +1,6 @@
 {
   "name": "thanos-gauntlet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Infinity Gauntlet for Thanos snap.",
   "main": "index.js",
   "directories": {
